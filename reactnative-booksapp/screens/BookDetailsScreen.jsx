@@ -26,7 +26,6 @@ export default function BookDetailsScreen({ route }) {
     },
     tags: {
         flex: 1,
-        marginHorizontal: 75,
         marginBottom: 180,
         flexDirection: 'row',
         justifyContent: 'space-between',
