@@ -28,7 +28,7 @@ export default function BookItem({ book, onDetailsPress }) {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 23,
+    marginVertical: 11.5,
     marginHorizontal: 16,
     borderColor: '#0000001F',
     borderWidth: 1,
