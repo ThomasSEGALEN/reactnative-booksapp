@@ -29,7 +29,8 @@ export default function BookDetailsScreen({ route }) {
         marginHorizontal: 75,
         marginBottom: 180,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        alignSelf: 'center'
     }
   });
   

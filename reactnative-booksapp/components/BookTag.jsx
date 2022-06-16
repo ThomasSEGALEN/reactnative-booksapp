@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
         lineHeight: 20,
         letterSpacing: 0.25,
-        height: 32
+        height: 32,
+        marginHorizontal: 4
     }
 });
