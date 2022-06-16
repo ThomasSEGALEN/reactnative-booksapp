@@ -17,7 +17,7 @@ function BookStack() {
             screenOptions={{
             }}
         >
-            <Stack.Screen name={routes.BookList} options={{ headerShown: false }} component={BookListScreen} />
+            <Stack.Screen name={routes.Book} options={{ headerShown: false }} component={BookListScreen} />
             <Stack.Screen name={routes.BookDetails} options={({ route }) => ({ title: route.params.name, headerStyle: { backgroundColor: '#6200EE' }, headerTintColor: '#FFFFFF' })} component={BookDetailsScreen} />
         </Stack.Navigator>
     );

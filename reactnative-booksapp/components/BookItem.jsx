@@ -10,7 +10,7 @@ export default function BookItem({ book, onDetailsPress }) {
         </Title>
         <Paragraph style={styles.paragraph}>
             {book.details.description}{"\n"}
-            written by <Text style={styles.name}>{book.details.authors[0].name}{"\n"}</Text>
+            written by <Text style={styles.name}>{book.details.authors[0].name}</Text>{"\n"}
             published by <Text style={styles.name}>{book.details.publishers}</Text>{"\n"}
             <Text style={styles.date}>{book.details.publish_date}</Text>
         </Paragraph>

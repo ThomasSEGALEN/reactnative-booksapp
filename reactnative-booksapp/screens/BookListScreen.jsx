@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
         padding: 16,
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#FFFFFF'
     },
   });

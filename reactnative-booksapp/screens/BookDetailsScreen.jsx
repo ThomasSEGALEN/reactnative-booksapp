@@ -6,18 +6,22 @@ export default function BookDetailsScreen({ route }) {
     const { book } = route.params;
 
     return (
-        <>
+        <View style={styles.container}>
             <StatusBar style="auto" />
             <Image style={styles.image} source={{uri: book.cover_url}}/>
             <View style={styles.tags}>
                 {book.details.subjects[0] ? <BookTag book={book} index={0} /> : null}
                 {book.details.subjects[1] ? <BookTag book={book} index={1} /> : null}
             </View>
-        </>
+        </View>
     );
   } 
   
   const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#FFFFF'
+    },
     image: {
         width: 231,
         height: 301,
@@ -25,8 +29,6 @@ export default function BookDetailsScreen({ route }) {
         marginVertical: 21
     },
     tags: {
-        flex: 1,
-        marginBottom: 180,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignSelf: 'center'
