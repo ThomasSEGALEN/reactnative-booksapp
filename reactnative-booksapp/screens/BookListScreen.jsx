@@ -28,6 +28,9 @@ export default function BooksListScreen({ navigation }) {
 
 const styles = StyleSheet.create({
     mainContainer: {
-        padding: 16
+        flex: 1,
+        padding: 16,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
   });

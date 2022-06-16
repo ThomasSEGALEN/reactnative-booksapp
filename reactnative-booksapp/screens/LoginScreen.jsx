@@ -1,10 +1,6 @@
-import { FlatList, StatusBar, StyleSheet } from 'react-native';
-import routes from '../routes';
-import books from '../books.json';
+import { StatusBar, StyleSheet } from 'react-native';
 
-import BookItem from '../components/BookItem';
-
-export default function BooksListScreen({ navigation }) {
+export default function LoginScreen({ navigation }) {
     return (
         <>
         <StatusBar style="auto" />
@@ -14,8 +10,4 @@ export default function BooksListScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-    mainContainer: {
-      padding: 16,
-      paddingBottom: 4,
-    },
-  });
+});

@@ -1,14 +1,12 @@
 import { StyleSheet } from 'react-native';
 import { Badge } from 'react-native-paper';
 
-export default function BookTag({ book }) {
-    console.log(book);
-  return (
-    <> 
-        <Badge style={styles.tag}>{book.details.subject[0]}</Badge>
-        <Badge style={styles.tag}>{book.details.subject[1]}</Badge>
-    </>
-  );
+export default function BookTag({ book, index }) {
+    return (
+        <> 
+            <Badge style={styles.tag}>{book.details.subjects[index]}</Badge>
+        </>
+    );
 } 
 
 const styles = StyleSheet.create({
@@ -17,6 +15,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#21212114',
         paddingHorizontal: 12,
         paddingVertical: 6,
-        borderRadius: 4
+        borderRadius: 4,
+        fontSize: 14,
+        lineHeight: 20,
+        letterSpacing: 0.25,
+        height: 32
     }
 });
